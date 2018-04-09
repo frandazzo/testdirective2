@@ -1,0 +1,27 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Esempio direttive
+	</title>
+
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/mainController.js"></script>
+	<script src="assets/js/services/geoService.js"></script>
+	<script src="assets/js/directives.js"></script>
+</head>
+<body ng-controller="main">
+	<my-tabs>
+	    <my-pane title="hello">
+	        <my-regions></my-regions>
+	    </my-pane>
+	    <my-pane title="world">
+	        <my-provinces></my-provinces>
+	    </my-pane>
+	</my-tabs>
+</body>
+</html>
